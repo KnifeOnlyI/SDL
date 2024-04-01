@@ -1036,3 +1036,8 @@
 #define SDL_wcsnstr SDL_wcsnstr_REAL
 #define SDL_wcsstr SDL_wcsstr_REAL
 #define SDL_wcstol SDL_wcstol_REAL
+#define SDL_TestTaskbar SDL_TestTaskbar_REAL
+#define SDL_CreateTaskbar SDL_CreateTaskbar_REAL
+#define SDL_SetTaskbarState SDL_SetTaskbarState_REAL
+#define SDL_SetTaskbarProgressValue SDL_SetTaskbarProgressValue_REAL
+#define SDL_DestroyTaskbar SDL_DestroyTaskbar_REAL
