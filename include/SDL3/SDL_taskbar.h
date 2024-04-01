@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-#include <shobjidl.h>
+typedef struct ITaskbarList3 ITaskbarList3;
 
 typedef struct SDL_Taskbar SDL_Taskbar;
 typedef enum SDL_TaskbarState SDL_TaskbarState;
@@ -25,7 +25,6 @@ enum SDL_TaskbarState
     SDL_TASKBAR_STATE_ERROR
 };
 
-extern DECLSPEC int SDLCALL SDL_TestTaskbar(void);
 extern DECLSPEC SDL_Taskbar *SDLCALL SDL_CreateTaskbar();
 extern DECLSPEC SDL_bool SDLCALL SDL_SetTaskbarState(SDL_Window *window, const SDL_Taskbar *taskbar, const SDL_TaskbarState state);
 extern DECLSPEC SDL_bool SDLCALL SDL_SetTaskbarProgressValue(SDL_Window *window, const SDL_Taskbar *taskbar, const float currentPercentage);
